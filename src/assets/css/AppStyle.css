@@ -1,0 +1,48 @@
+.flex-container {
+  flex: 1 1 auto;
+}
+.flex-container .user-table {
+  flex: 1 1 100%;
+  width: 100%;
+  padding: 20px 20px;
+  border-collapse: collapse;
+}
+.flex-container .user-table thead td {
+  font-size: 16px;
+  color: #63646dff;
+  text-align: center;
+}
+.flex-container .user-table thead .icon-select-user {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.flex-container .user-table thead .select-user {
+  display: block;
+  font-size: 12px;
+  color: #63646dff;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.flex-container .user-table tbody .front-pokemon {
+  border-radius: 3px;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+.flex-container .user-table tbody .poke-name {
+  text-transform: capitalize;
+}
+.flex-container .user-table tbody tr {
+  border: none;
+}
+.flex-container .user-table tbody tr:hover {
+  background-color: #fafbffff;
+}
+.flex-container .user-table tbody td {
+  font-size: 14px;
+  color: #63646dff;
+  text-align: center;
+  border: none;
+}

@@ -1,0 +1,101 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-container .overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+.modal-container .overlay .modal {
+  position: relative;
+  z-index: 101;
+  margin: 50px auto;
+  width: 600px;
+  height: auto;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #d3e8fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+@keyframes load-spin {
+  0% {
+    height: 50px;
+  }
+  50% {
+    height: 180px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+.modal-container .overlay .modal .spiner {
+  margin: 100px;
+  width: 100%px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.modal-container .overlay .modal .spiner .element {
+  animation-name: load-spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 20px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 10px ;
+  background-color: #62e456;
+}
+.modal-container .overlay .modal .spiner .element:nth-child(2) {
+  animation-delay: 250ms;
+}
+.modal-container .overlay .modal .spiner .element:nth-child(3) {
+  animation-delay: 500ms;
+}
+.modal-container .overlay .modal .spiner .element:nth-child(4) {
+  animation-delay: 750ms;
+}
+.modal-container .overlay .modal .spiner .element:nth-child(5) {
+  animation-delay: 1000ms;
+}
+.modal-container .overlay .modal .modal-tittle {
+  text-transform: capitalize;
+  font-size: 24px;
+  text-align: center;
+  color: #063ca0;
+}
+.modal-container .overlay .modal .front-default {
+  margin-top: 20px;
+  flex: 1 1 auto;
+}
+.modal-container .overlay .modal .front-default img {
+  width: 200px;
+  height: auto;
+}
+.modal-container .overlay .modal .foot-bar {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.modal-container .overlay .modal .foot-bar img {
+  flex: 1 1 100px;
+}
